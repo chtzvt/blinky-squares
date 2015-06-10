@@ -141,7 +141,10 @@ SOFTWARE.
     window.onLoad = refreshBoard();
     setInterval(function () {refreshBoard()}, 1000);
 
-    //When the user resizes the window, we want the board to reflect the changes as well.
+        //When the user resizes the window, we want the board to reflect the changes as well.
+    //We'll also do it on mouse move, since it looks cool ;)
     window.addEventListener("resize", refreshBoard);
+    window.addEventListener("mousemove", refreshBoard);
+
   </script>
 </body>
